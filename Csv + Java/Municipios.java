@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Municipios {
 
@@ -16,11 +17,13 @@ public class Municipios {
             this.codigo = codigo;
             this.valor = valor;
         }
+
         @Override
         public String toString() {
             return "Territorio: " + territorio + ", Código: " + codigo + ", Valor: " + valor;
         }
     }
+
     public static void main(String[] args) {
         String pathcsv = "viviendas-por-intensidad-de-uso-a-partir-del-consumo-electrico.-mediana-consumo-anual.csv";
         String linea;
@@ -47,18 +50,24 @@ public class Municipios {
                 } catch (NumberFormatException e) {
                     continue;
                 }
+
                 listaMunicipios.add(new Municipio(values[3], values[2], valor));
             }
 
             listaMunicipios.sort((m1, m2) -> Double.compare(m2.valor, m1.valor));
 
-            System.out.println("Los 3 municipios con más mediana:");
-            for (int i = 0; i < 3 && i < listaMunicipios.size(); i++) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("¿Cuántos municipios quieres ver?: ");
+            int cantidad = scanner.nextInt();
+            scanner.close();
+
+            System.out.println("\nLos " + cantidad + " municipios con mayor mediana:");
+            for (int i = 0; i < cantidad && i < listaMunicipios.size(); i++) {
                 System.out.println((i + 1) + ". " + listaMunicipios.get(i));
             }
 
         } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
+            System.err.println("Error al leer el archivo: " + e.getMessage());
         }
     }
 }
