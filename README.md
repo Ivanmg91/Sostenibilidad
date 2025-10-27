@@ -88,20 +88,20 @@ for (int i = 0; i < cantidad && i < listaMunicipios.size(); i++) {
 
 ## 🚀 Ejecución del Programa
 
-1. Coloca el archivo CSV en el mismo directorio que el código fuente.
+- Coloca el archivo CSV en el mismo directorio que el código fuente.
 
 
-2. Compila el programa:
+- Compila el programa:
 
 javac Municipios.java
 
 
-3. Ejecuta el programa:
+- Ejecuta el programa:
 
 java Municipios
 
 
-4. Introduce el número de municipios que deseas visualizar.
+- Introduce el número de municipios que deseas visualizar.
 
 
 
