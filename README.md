@@ -42,7 +42,7 @@ El flujo principal del programa es el siguiente:
 
 ## 💻 Tecnologías Utilizadas
 
-- ☕ **Java 17+** – Lenguaje de programación principal.  
+- ☕ **Java** – Lenguaje de programación principal.  
 - 📊 **CSV** – Formato de los datos de entrada.  
 - 💬 **Consola / Terminal** – Interfaz de usuario para ejecución e interacción.  
 - 📦 **JAR ejecutable (opcional)** – Facilita la distribución del programa.
