@@ -83,10 +83,10 @@ for (int i = 0; i < cantidad && i < listaMunicipios.size(); i++) {
     System.out.println((i + 1) + ". " + listaMunicipios.get(i));
 }
 
-
+```
 ---
 
-🚀 Ejecución del Programa
+## 🚀 Ejecución del Programa
 
 1. Coloca el archivo CSV en el mismo directorio que el código fuente.
 
@@ -108,7 +108,7 @@ java Municipios
 
 ---
 
-🧾 Ejemplo de Salida
+## 🧾 Ejemplo de Salida
 
 ¿Cuántos municipios quieres ver?: 5
 
@@ -121,7 +121,7 @@ Los 5 municipios con mayor mediana:
 
 ---
 
-🧭 Conclusión
+## 🧭 Conclusión
 
 Este proyecto demuestra cómo procesar y analizar datos estructurados de manera eficiente utilizando Java.
 A través de un enfoque claro y modular, se consigue transformar un conjunto de datos en bruto en información útil y ordenada.
@@ -149,12 +149,10 @@ Incluir métricas adicionales como la media o desviación estándar del consumo.
 
 ---
 
-🧑‍💻 Autor
+## 🧑‍💻 Autor
 
-Tu Nombre
-📧 contacto@ejemplo.com
+Iván Montiano González 
+📧 montianogonzalezivan@gmail.com 
 📅 2025
 
 ---
-
-¿Quieres que te lo personalice con tu **nombre y correo o usuario de GitHub** para dejarlo listo para subir al repositorio?
