@@ -128,28 +128,16 @@ A través de un enfoque claro y modular, se consigue transformar un conjunto de 
 
 Además, este ejercicio refuerza habilidades clave como:
 
-La lectura y validación de datos desde archivos externos.
+- La lectura y validación de datos desde archivos externos.
 
-El uso de clases y objetos para estructurar la información.
-
-La ordenación personalizada mediante expresiones lambda.
-
-
-Como posibles mejoras futuras:
-
-Exportar los resultados a un nuevo archivo CSV.
-
-Implementar una interfaz gráfica amigable (GUI).
-
-Incluir métricas adicionales como la media o desviación estándar del consumo.
-
+- El uso de clases y objetos para estructurar la información.
 
 💡 En definitiva, un ejemplo práctico y didáctico de cómo combinar programación estructurada y análisis de datos en Java.
 
 
 ---
 
-## 🧑‍💻 Autor
+## Autor
 
 Iván Montiano González 
 📧 montianogonzalezivan@gmail.com 
