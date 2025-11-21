@@ -1,36 +1,49 @@
-# Albuaves
+# Proyecto: AlbuAves
 
-Albuaves es un pequeño proyecto mascota ( *pet-project* ) , que pretende
-de una manera sencilla plantear al alumnado todas las partes implicadas
-en una Solución Software basada en la arquitectura *Cliente-Servidor*.
+## 🔹 Descripción del Proyecto
+Este proyecto consiste en una **API de aves** y un **cliente Java** que realiza peticiones GET a la API y muestra la información de manera estructurada en la terminal.  
 
-Por una parte tendremos una base de datos en `SQLite` que editaremos de manera
-sencilla con `sqlitebrowser` y que usaremos como persistencia en el lado 
-del servidor.
+Motivación del proyecto:  
+- Practicar la integración entre **API web** y **aplicaciones Java**.  
+- Gestionar datos JSON y mostrarlos en formato legible.  
+- Familiarizarse con la infraestructura de desarrollo y pruebas de proyectos cliente-servidor.
 
-Serviremos una API Rest, programada en PHP, por ahora se plantea con dos únicas
-funciones: 
+---
 
-### Listar todas las aves
+## 🔹 Tecnologías Utilizadas
+- **Lenguajes:** PHP (API), Java (cliente)  
+- **Bibliotecas/Dependencias:** 
+  - Java: `org.json` (JSON parsing)  
+  - PHP: php-sqlite3 
+- **Base de datos:** sqlitebrowser 
+- **Otras herramientas:**  
+  - Terminal/CLI para ejecución de Java  
+  - Navegador para pruebas de la API  
 
-### Listar un ave a partir de un `id_ave` dado
 
-## Software Requerido
+---
 
-* sqlitebrowser
-* php-sqlite3
+## 🔹 Capturas de Funcionamiento
 
-### Comandos para la instalación en máquinas de desarrollo
+### 1. Llamada a la API en el navegador
+![Captura de la API en el navegador](images/Captura.PNG)
 
+### 2. Cliente Java ejecutándose en la terminal
+![Captura del cliente Java](images/2.PNG)
+
+---
+
+## 🔹 Infraestructura y Scripts de Desarrollo
+
+### 1. Puesta en marcha del Servidor
+Comandos para levantar el servidor local de PHP:
 ```bash
-sudo apt update; sudo apt install sqlitebrowser php-sqlite3
-```
+# Instalar depencencias
+sudo apt install sqlitebrowser php-sqlite3
 
-## URLs de interés
+# Desde la carpeta donde está api.php
+php -S 127.0.0.1:9191 api.php
 
-### JSON.org
-
-Podemos encontrar más información acerca de JSON.org en la página de 
-GitHub del desarrollador principal.
-
-https://github.com/stleary/JSON-java
+# Compilar y ejecutar el archivo java
+javac -cp .:json-20250517.jar SearchBirdsAPI.java
+java -cp .:json-20250517.jar SearchBirdsAPI

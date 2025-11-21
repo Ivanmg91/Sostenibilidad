@@ -20,8 +20,8 @@ public class SearchBirdsAPI {
             String response = sendGETPetition(apiUrl);
 
             // Mostrar la respuesta
-            System.out.println("Response from API:");
-            System.out.println(response);
+            //System.out.println("Response from API:");
+            //System.out.println(response);
             printJSONLint(response);
 
         } catch (IOException e) {
