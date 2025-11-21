@@ -43,7 +43,10 @@ sudo apt install sqlitebrowser php-sqlite3
 
 # Desde la carpeta donde está api.php
 php -S 127.0.0.1:9191 api.php
+```
 
-# Compilar y ejecutar el archivo java
+### 2. Puesta en marcha del Cliente
+```bash
 javac -cp .:json-20250517.jar SearchBirdsAPI.java
 java -cp .:json-20250517.jar SearchBirdsAPI
+```
