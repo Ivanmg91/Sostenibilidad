@@ -47,6 +47,7 @@ php -S 127.0.0.1:9191 api.php
 
 ### 2. Puesta en marcha del Cliente
 ```bash
+# Compilar y ejecutar el archivo del cliente
 javac -cp .:json-20250517.jar SearchBirdsAPI.java
 java -cp .:json-20250517.jar SearchBirdsAPI
 ```
